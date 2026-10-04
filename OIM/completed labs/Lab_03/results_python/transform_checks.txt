@@ -1,0 +1,4 @@
+r1: different=0, MAE=0
+r2: different=0, MAE=0
+r3: different=0, MAE=0
+r4: different=0, MAE=0

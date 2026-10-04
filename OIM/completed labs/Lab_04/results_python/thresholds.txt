@@ -1,0 +1,4 @@
+iterative=101.41132305407149
+otsu=101
+iterations=4
+lines=153
