@@ -1,0 +1,226 @@
+[
+  {
+    "n": 128,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.0015163333337113727,
+    "tp_seconds": 0.0010460666671860963,
+    "speedup": 1.449557070573988,
+    "efficiency": 0.724778535286994,
+    "efficiency_total_threads": 0.362389267643497,
+    "serial_fraction_b": 0.37973180952996244,
+    "max_abs_error": 4.440892098500626e-16,
+    "relative_residual": 3.854760824683005e-16,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      0.001523899998574052,
+      0.001788900000974536,
+      0.0012362000015855301
+    ],
+    "parallel_samples": [
+      0.0011627000021690037,
+      0.0012325999996392056,
+      0.0007428999997500796
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 256,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.0067140333327794606,
+    "tp_seconds": 0.002831400001014117,
+    "speedup": 2.3712768702319376,
+    "efficiency": 1.1856384351159688,
+    "efficiency_total_threads": 0.5928192175579844,
+    "serial_fraction_b": -0.1565725516462455,
+    "max_abs_error": 5.551115123125783e-16,
+    "relative_residual": 6.175523987732542e-16,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      0.006269199999223929,
+      0.006772500000806758,
+      0.007100399998307694
+    ],
+    "parallel_samples": [
+      0.002504700001736637,
+      0.0025182999997923616,
+      0.0034712000015133526
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 512,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.02818953333189711,
+    "tp_seconds": 0.00882140000006378,
+    "speedup": 3.1955849787667825,
+    "efficiency": 1.5977924893833912,
+    "efficiency_total_threads": 0.7988962446916956,
+    "serial_fraction_b": -0.37413649979922425,
+    "max_abs_error": 1.2212453270876722e-15,
+    "relative_residual": 1.1874456504954382e-15,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      0.02988759999789181,
+      0.026328299998567672,
+      0.028352699999231845
+    ],
+    "parallel_samples": [
+      0.008404100000916515,
+      0.009267099998396588,
+      0.008793000000878237
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 1000,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.1081388000008398,
+    "tp_seconds": 0.03640576666778846,
+    "speedup": 2.970375572299653,
+    "efficiency": 1.4851877861498266,
+    "efficiency_total_threads": 0.7425938930749133,
+    "serial_fraction_b": -0.32668447092984687,
+    "max_abs_error": 1.3322676295501878e-15,
+    "relative_residual": 1.3098940243214879e-15,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      0.10939570000118692,
+      0.10753660000045784,
+      0.1074841000008746
+    ],
+    "parallel_samples": [
+      0.03484519999983604,
+      0.04065610000179731,
+      0.03371600000173203
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 2000,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.44286756666648824,
+    "tp_seconds": 0.14589746666509504,
+    "speedup": 3.0354712579285743,
+    "efficiency": 1.5177356289642872,
+    "efficiency_total_threads": 0.7588678144821436,
+    "serial_fraction_b": -0.3411237234495137,
+    "max_abs_error": 2.4424906541753444e-15,
+    "relative_residual": 2.295381869376705e-15,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      0.44085009999980684,
+      0.44302459999744315,
+      0.4447280000022147
+    ],
+    "parallel_samples": [
+      0.14846149999721092,
+      0.1406079000007594,
+      0.14862299999731476
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 3000,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 0.9973710999984178,
+    "tp_seconds": 0.31988736666729284,
+    "speedup": 3.1178821170382744,
+    "efficiency": 1.5589410585191372,
+    "efficiency_total_threads": 0.7794705292595686,
+    "serial_fraction_b": -0.3585389296565735,
+    "max_abs_error": 3.3306690738754696e-15,
+    "relative_residual": 3.218809577526054e-15,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      1.0158886999997776,
+      0.9802596999979869,
+      0.9959648999974888
+    ],
+    "parallel_samples": [
+      0.32471129999976256,
+      0.32988230000046315,
+      0.30506850000165286
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  },
+  {
+    "n": 4000,
+    "iterations": 100,
+    "processes": 2,
+    "threads_per_process": 2,
+    "total_threads": 4,
+    "threading_layer": "omp",
+    "t1_seconds": 1.7910668333339952,
+    "tp_seconds": 0.5618789000000106,
+    "speedup": 3.1876385344492584,
+    "efficiency": 1.5938192672246292,
+    "efficiency_total_threads": 0.7969096336123146,
+    "serial_fraction_b": -0.37257628856417735,
+    "max_abs_error": 2.4424906541753444e-15,
+    "relative_residual": 2.3199461546740124e-15,
+    "correct": true,
+    "repeats": 3,
+    "sequential_samples": [
+      1.8045701000010013,
+      1.7765371999994386,
+      1.7920932000015455
+    ],
+    "parallel_samples": [
+      0.5387559999981022,
+      0.6268115000020771,
+      0.5200691999998526
+    ],
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "mpi_library": "Microsoft MPI 10.1.12498.52"
+  }
+]

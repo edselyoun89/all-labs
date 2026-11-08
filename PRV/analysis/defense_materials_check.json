@@ -1,0 +1,59 @@
+{
+  "handouts": [
+    {
+      "folder": "Lab_01_variant_22",
+      "file": "Защита_лабораторной.txt",
+      "characters": 5391
+    },
+    {
+      "folder": "Lab_01_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 4028
+    },
+    {
+      "folder": "Lab_02_variant_22",
+      "file": "Защита_лабораторной.txt",
+      "characters": 5457
+    },
+    {
+      "folder": "Lab_02_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 3717
+    },
+    {
+      "folder": "Lab_03_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 4311
+    },
+    {
+      "folder": "Lab_04_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 4685
+    },
+    {
+      "folder": "Lab_05_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 4472
+    },
+    {
+      "folder": "Lab_06_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 4706
+    },
+    {
+      "folder": "Lab_07_variant_24",
+      "file": "Защита_лабораторной.txt",
+      "characters": 5156
+    }
+  ],
+  "reports": [
+    "Lab_01_variant_22\\report.docx",
+    "Lab_01_variant_22\\report.pdf",
+    "Lab_02_variant_22\\report.docx",
+    "Lab_02_variant_22\\report.pdf"
+  ],
+  "local_http_demo": true,
+  "mpi_paragraph_filter": true,
+  "exports_json_csv_html": true,
+  "shared_document_publication": true
+}

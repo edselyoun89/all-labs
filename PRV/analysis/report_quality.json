@@ -1,0 +1,42 @@
+[
+  {
+    "folder": "Lab_01_variant_22",
+    "pages": 11,
+    "characters_per_page": [
+      465,
+      355,
+      2642,
+      2158,
+      89,
+      989,
+      1601,
+      1031,
+      2170,
+      3520,
+      1753
+    ],
+    "full_source_appendix_matches": true,
+    "variant": 22,
+    "all_pages_rendered": true
+  },
+  {
+    "folder": "Lab_02_variant_22",
+    "pages": 11,
+    "characters_per_page": [
+      476,
+      272,
+      2435,
+      2491,
+      1311,
+      1547,
+      1460,
+      2641,
+      3308,
+      3482,
+      3019
+    ],
+    "full_source_appendix_matches": true,
+    "variant": 22,
+    "all_pages_rendered": true
+  }
+]

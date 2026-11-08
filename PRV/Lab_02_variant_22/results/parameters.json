@@ -1,0 +1,9 @@
+{
+  "producers": 5,
+  "threads": 10,
+  "tasks": 30,
+  "service_ms": 5.0,
+  "repeats": 3,
+  "benchmark": true,
+  "log": "INFO"
+}

@@ -1,0 +1,223 @@
+[
+  {
+    "name": "jacobi_p1",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "1",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "test_jacobi.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"processes\": 1, \"passed\": 4, \"total\": 4, \"openmp\": \"omp\", \"correct\": true}\n",
+    "stderr": ""
+  },
+  {
+    "name": "jacobi_p2",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "2",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "test_jacobi.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"processes\": 2, \"passed\": 5, \"total\": 5, \"openmp\": \"omp\", \"correct\": true}\n",
+    "stderr": ""
+  },
+  {
+    "name": "jacobi_p4",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "4",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "test_jacobi.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"processes\": 4, \"passed\": 5, \"total\": 5, \"openmp\": \"omp\", \"correct\": true}\n",
+    "stderr": ""
+  },
+  {
+    "name": "jacobi_p8",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "8",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "test_jacobi.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"processes\": 8, \"passed\": 5, \"total\": 5, \"openmp\": \"omp\", \"correct\": true}\n",
+    "stderr": ""
+  },
+  {
+    "name": "priority_queue_tests",
+    "folder": "Lab_02_variant_22",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "-v",
+      "test_priority_queue.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_concurrent_no_loss (test_priority_queue.QueueTests.test_concurrent_no_loss)\n5 производителей и 10 потребителей обрабатывают 1500 задач ровно один раз. ... ok\ntest_priorities_and_fifo (test_priority_queue.QueueTests.test_priorities_and_fifo)\nПредварительно заполненная очередь выдаёт HIGH, MEDIUM, LOW и FIFO. ... ok\ntest_validation_and_accounting (test_priority_queue.QueueTests.test_validation_and_accounting)\nОтклонить неправильные приоритеты и лишние подтверждения. ... ok\ntest_wait_and_notification (test_priority_queue.QueueTests.test_wait_and_notification)\nget блокируется до put и пробуждается через Condition.notify. ... ok\ntest_worker_error_returns (test_priority_queue.QueueTests.test_worker_error_returns)\nОшибка функции обработки передаётся наверх без зависания join. ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.060s\n\nOK\n"
+  },
+  {
+    "name": "lab1_invalid_size",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "2",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--n",
+      "17"
+    ],
+    "exit_code": 1,
+    "stdout": "\njob aborted:\n[ranks] message\n\n[0] terminated\n\n[1] application aborted\naborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 1\n\n---- error analysis -----\n\n[1] on DESKTOP-2RHTMJ7\nC:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe aborted the job. abort code 1\n\n---- error analysis -----\nОШИБКА: Каждый N должен быть положительным и делиться на p\n",
+    "stderr": ""
+  },
+  {
+    "name": "lab1_invalid_repeats",
+    "folder": "Lab_01_variant_22",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "1",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--repeats",
+      "0"
+    ],
+    "exit_code": 1,
+    "stdout": "ОШИБКА: Нужны iterations >= 1, repeats >= 3, threads >= 2\n\njob aborted:\n[ranks] message\n\n[0] application aborted\naborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 0\n\n---- error analysis -----\n\n[0] on DESKTOP-2RHTMJ7\nC:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe aborted the job. abort code 1\n\n---- error analysis -----\n",
+    "stderr": ""
+  },
+  {
+    "name": "lab2_invalid_tasks",
+    "folder": "Lab_02_variant_22",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--tasks",
+      "0"
+    ],
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "usage: main.py [-h] [--producers PRODUCERS] [--threads THREADS]\n               [--tasks TASKS] [--service-ms SERVICE_MS] [--repeats REPEATS]\n               [--benchmark] [--log {DEBUG,INFO,WARNING,ERROR}]\nmain.py: error: Нужны положительные количества, repeats >= 3 и конечный service-ms >= 0\n"
+  },
+  {
+    "name": "lab3_smoke",
+    "folder": "Lab_03_variant_24",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--single"
+    ],
+    "exit_code": 0,
+    "stdout": "{'records': 10000, 'queries': 2, 'processes': 2, 'time_seq': 0.004565199997159652, 'time_par': 0.40937149999808753, 'speedup': 0.011151728923926017, 'efficiency': 0.0055758644619630085, 'correct': True, 'total_matches': 2000, 'repeats': 1}\n",
+    "stderr": "2026-11-08 20:19:19,239 - MainProcess - INFO - Smoke-test: {'records': 10000, 'queries': 2, 'processes': 2, 'time_seq': 0.004565199997159652, 'time_par': 0.40937149999808753, 'speedup': 0.011151728923926017, 'efficiency': 0.0055758644619630085, 'correct': True, 'total_matches': 2000, 'repeats': 1}\n"
+  },
+  {
+    "name": "Lab_05_variant_24_integration",
+    "folder": "Lab_05_variant_24",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "integration_test.py"
+    ],
+    "exit_code": 0,
+    "stdout": "integration_test: OK\n",
+    "stderr": "WARNING:test:Соединение ('127.0.0.1', 64139) завершено: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение\n"
+  },
+  {
+    "name": "Lab_06_variant_24_integration",
+    "folder": "Lab_06_variant_24",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "integration_test.py"
+    ],
+    "exit_code": 0,
+    "stdout": "integration_test: OK\n",
+    "stderr": "Ошибка клиента Viewer: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение\n"
+  },
+  {
+    "name": "Lab_07_variant_24_integration",
+    "folder": "Lab_07_variant_24",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "integration_test.py"
+    ],
+    "exit_code": 0,
+    "stdout": "integration_test: OK\n",
+    "stderr": "127.0.0.1 - - [08/Nov/2026 20:19:20] \"GET /index.html HTTP/1.1\" 200 -\n"
+  },
+  {
+    "name": "lab4_source_zero",
+    "folder": "Lab_04_variant_24",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "2",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--n",
+      "32"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"n\": 32, \"processes\": 2, \"point_to_point_seconds\": 0.002024000001256354, \"collective_seconds\": 0.0035873999950126745, \"cartesian_seconds\": 0.002058099998976104, \"point_to_point_correct\": true, \"collective_correct\": true, \"cartesian_correct\": true, \"all_correct\": true, \"shortest_path_checksum\": 351.0}\n",
+    "stderr": ""
+  },
+  {
+    "name": "lab4_source_one_probe",
+    "folder": "Lab_04_variant_24",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "2",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "main.py",
+      "--n",
+      "32",
+      "--source",
+      "1"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"n\": 32, \"processes\": 2, \"point_to_point_seconds\": 0.001338399997621309, \"collective_seconds\": 0.0011190000004717149, \"cartesian_seconds\": 0.0009311000030720606, \"point_to_point_correct\": true, \"collective_correct\": true, \"cartesian_correct\": false, \"all_correct\": false, \"shortest_path_checksum\": 530.0}\n",
+    "stderr": ""
+  },
+  {
+    "name": "lab1_old_pivot_probe",
+    "folder": "Lab_01_variant_24",
+    "command": [
+      "C:\\Program Files\\Microsoft MPI\\Bin\\mpiexec.exe",
+      "-n",
+      "1",
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "-c",
+      "import numpy as np; from mpi4py import MPI; from main import sequential_computation, parallel_computation, check_result; a=np.array([[0.,1.],[1.,0.]]); s=sequential_computation(a); p=parallel_computation(a,MPI.COMM_WORLD); print({\"sequential\":s,\"parallel\":p,\"correct\":check_result(s,p)})"
+    ],
+    "exit_code": 0,
+    "stdout": "{'sequential': (-1.0, 0.0), 'parallel': (0.0, -inf), 'correct': False}\n",
+    "stderr": ""
+  },
+  {
+    "name": "lab7_nested_html_probe",
+    "folder": "Lab_07_variant_24",
+    "command": [
+      "C:\\Users\\nikit\\Desktop\\kipu\\PRV\\.venv312\\Scripts\\python.exe",
+      "-c",
+      "from parser import SiteParser; p=SiteParser(); p.feed(\"<p>Hello <b>nested</b> world</p>\"); print({\"expected\":[\"Hello nested world\"],\"actual\":p.paragraphs})"
+    ],
+    "exit_code": 0,
+    "stdout": "{'expected': ['Hello nested world'], 'actual': ['world']}\n",
+    "stderr": ""
+  }
+]

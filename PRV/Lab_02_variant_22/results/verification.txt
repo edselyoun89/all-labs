@@ -1,0 +1,15 @@
+test_concurrent_no_loss (test_priority_queue.QueueTests.test_concurrent_no_loss)
+5 производителей и 10 потребителей обрабатывают 1500 задач ровно один раз. ... ok
+test_priorities_and_fifo (test_priority_queue.QueueTests.test_priorities_and_fifo)
+Предварительно заполненная очередь выдаёт HIGH, MEDIUM, LOW и FIFO. ... ok
+test_validation_and_accounting (test_priority_queue.QueueTests.test_validation_and_accounting)
+Отклонить неправильные приоритеты и лишние подтверждения. ... ok
+test_wait_and_notification (test_priority_queue.QueueTests.test_wait_and_notification)
+get блокируется до put и пробуждается через Condition.notify. ... ok
+test_worker_error_returns (test_priority_queue.QueueTests.test_worker_error_returns)
+Ошибка функции обработки передаётся наверх без зависания join. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.059s
+
+OK
